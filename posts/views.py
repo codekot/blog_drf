@@ -2,7 +2,7 @@ from rest_framework import generics, permissions
 
 from .models import Post
 from .permissions import IsAuthorOrReadOnly
-from .serializer import PostSerializer
+from .serializers import PostSerializer
 
 
 class PostList(generics.ListCreateAPIView):
